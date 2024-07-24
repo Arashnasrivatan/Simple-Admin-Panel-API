@@ -1,0 +1,653 @@
+{
+	"info": {
+		"_postman_id": "ddcb1800-b88f-4a7f-b1df-2eeb9c0ec594",
+		"name": "CRUD App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32229897"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namefull\":\"حامد\",\r\n    \"username\":\"hamed123\",\r\n    \"password\":\"hamed123\",\r\n    \"email\":\"hamed123@gmail.com\",\r\n    \"city\":\"دزفول\",\r\n    \"street\":\"شهید حامی\",\r\n    \"postal_code\": 234234234,\r\n    \"address\": \"test test\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namefull\":\"حامد\",\r\n    \"username\":\"hamed123\",\r\n    \"password\":\"hamed123\",\r\n    \"email\":\"hamed123@gmail.com\",\r\n    \"city\":\"دزفول\",\r\n    \"street\":\"شهید حامد\",\r\n    \"postal_code\": 234234234,\r\n    \"address\": \"test test\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/users/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"users",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Gallery",
+			"item": [
+				{
+					"name": "get all gallery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/gallery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"gallery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get gallery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/gallery/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"gallery",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add gallery",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"عکس زیبا از جنگل\",\r\n    \"img_link\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12EiU7hXh-9S8gWafhJ2MRAu8tIia0zpV6g&s\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/gallery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"gallery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update gallery",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"عکس زیبایی از جنگل\",\r\n    \"img_link\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12EiU7hXh-9S8gWafhJ2MRAu8tIia0zpV6g&s\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/gallery/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"gallery",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete gallery",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"عکس زیبایی از جنگل\",\r\n    \"img_link\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12EiU7hXh-9S8gWafhJ2MRAu8tIia0zpV6g&s\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/gallery/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"gallery",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "get all Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get gallery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add gallery",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"user_id\": 2,\r\n \"title\":\"my new project\",\r\n \"text\":\"this project is a api for admin panel frontend by hamed and backend by arash\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"title\":\"my new project api\",\r\n \"text\":\"this project is a api for admin panel frontend by hamed and backend by arash\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/posts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"عکس زیبایی از جنگل\",\r\n    \"img_link\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12EiU7hXh-9S8gWafhJ2MRAu8tIia0zpV6g&s\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/posts/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"posts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "get all Comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get gallery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/comments/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add gallery",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"post_id\": 1,\r\n \"title\":\"nice project\",\r\n \"email\":\"arashnasrivatan@gmail.com\",\r\n \"text\":\"this project is so cool\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"title\":\"nice project arash\",\r\n \"email\":\"arashnasrivatan@gmail.com\",\r\n \"text\":\"this project is so cool\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/comments/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"عکس زیبایی از جنگل\",\r\n    \"img_link\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12EiU7hXh-9S8gWafhJ2MRAu8tIia0zpV6g&s\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/posts/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"posts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"arash456\",\r\n    \"password\":\"arash456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/restapi/crud/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restapi",
+						"crud",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhcmFzaDQ1NiIsInBhc3N3b3JkIjoiYXJhc2g0NTYiLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImFyYXNobmFzcml2YXRhbkBnbWFpbC5jb20iLCJleHAiOjE3MjIzNDk0MTB9.T79vdkgzNzo8qxGS28vT7LSwVHLaf4r7Uhu13wlZpL4",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
