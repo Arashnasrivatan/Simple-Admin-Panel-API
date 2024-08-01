@@ -16,7 +16,7 @@ use the postman file in repository 💎
 
 ### Authentication
 - **🔐 Login**
-  - `POST /v1/login` - Authenticate users.
+  - `POST /v1/login` - Authenticate Admin (Users cant login).
 
 ### 👥 Users
 - **📜 List Users**
