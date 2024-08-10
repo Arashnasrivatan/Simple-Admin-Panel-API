@@ -27,6 +27,8 @@ $router->get('v1','/users/{id}', UsersController::class, 'get', 'admin');
 $router->post('v1','/users', UsersController::class, 'store', 'admin');
 $router->put('v1','/users/{id}', UsersController::class, 'update', 'admin');
 $router->delete('v1','/users/{id}', UsersController::class, 'destroy', 'admin');
+// make admin
+$router->put('v1','/users/makeadmin/{id}', UsersController::class, 'makeadmin', 'admin');
 
 // Gallery
 

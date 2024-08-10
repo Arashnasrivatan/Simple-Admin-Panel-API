@@ -109,4 +109,27 @@ class UsersController extends Controller
 
         return $this->sendResponse(data: $deleteuser , message: "کاربر  با موفقیت حذف شد");
     }
+
+
+    public function makeadmin($id, $request){
+
+        $getuser = $this->queryBuilder->table('users')
+            ->where(value:$id)->get()->execute();
+        if(!$getuser) return $this->sendResponse(data:$getuser , message: "کاربر یافت نشد" , error: true, status: HTTP_NotFOUND);
+
+        $getuserrole = $this->queryBuilder->table('users')
+            ->where(value:$id)
+            ->where("role", "=", "admin")
+            ->get()->execute();
+        if($getuserrole) return $this->sendResponse(data:null , message: "کاربر در حال حاظر ادمین هست" , error: true, status: HTTP_NotFOUND);
+
+        $updatedUser = $this->queryBuilder->table('users')
+            ->update([
+                'role' => "admin",
+            ])->where(value: $id)
+            ->where("role", "=", "User")
+            ->execute();
+
+        return $this->sendResponse(data:$updatedUser , message: "کاربر با موفقیت ادمین شد");
+    }
 }
