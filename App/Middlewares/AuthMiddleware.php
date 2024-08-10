@@ -34,7 +34,7 @@ class AuthMiddleware {
 
     private function isPublicPath($path) {
         // Define public paths
-        $publicPaths = ['v1/login']; // Add more public paths if needed
+        $publicPaths = ['v1/login','v1/register']; // Add more public paths if needed
 
         // Check if the requested path is public
         return in_array($path, $publicPaths);
