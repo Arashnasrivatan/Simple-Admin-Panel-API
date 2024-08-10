@@ -13,6 +13,38 @@ class AuthController extends Controller
     {
         parent::__construct();
     }
+
+    public function register($request){
+        // validate request
+        $this->validate([
+            'namefull||required|min:2|max:40|string',
+            'username||required|min:3|max:25|string',
+            'password||required|min:8|max:20|string',
+            'email||required|min:10|max:50|string',
+            'city||required|min:3|max:25|string',
+            'street||required|min:2|max:40|string',
+            'postal_code||required|number',
+            'address||required|min:2|max:40|string',
+        ], $request);
+
+        $this->checkUnique(table: 'users' ,array: [['username', $request->username], ['email', $request->email]]);
+
+        $newUser = $this->queryBuilder->table('users')
+            ->insert([
+                'namefull' => $request->namefull,
+                'username' => $request->username,
+                'password' => $request->password,
+                'email' => $request->email,
+                'city' => $request->city,
+                'street' => $request->street,
+                'postal_code' => $request->postal_code,
+                'address' => $request->address,
+                'role' => 'User'
+            ])->execute();
+
+        return $this->sendResponse(data: $newUser, message: "حساب کاربری شما با موفقیت ایجاد شد!");
+    }
+
     public function login($request)
     {
         // validate request

@@ -18,6 +18,7 @@ $router = new Router();
 
 // Define routes
 $router->post('v1','/login', AuthController::class, 'login');
+$router->post('v1','/register', AuthController::class, 'register');
 
 // Users
 
@@ -51,4 +52,3 @@ $router->get('v1','/comments/{id}', CommentsController::class, 'get', 'admin');
 $router->post('v1','/comments', CommentsController::class, 'store', 'admin');
 $router->put('v1','/comments/{id}', CommentsController::class, 'update', 'admin');
 $router->delete('v1','/comments/{id}', CommentsController::class, 'destroy', 'admin');
-
