@@ -17,6 +17,8 @@ use the postman file in repository 💎
 ### Authentication
 - **🔐 Login**
   - `POST /v1/login` - Authenticate Admin (Users cant login).
+  - **🔐 register**
+  - `POST /v1/register` - Register User.
 
 ### 👥 Users
 - **📜 List Users**
@@ -29,6 +31,8 @@ use the postman file in repository 💎
   - `PUT /v1/users/{id}` - Update an existing user by ID. _(Requires admin)_
 - **🗑️ Delete User**
   - `DELETE /v1/users/{id}` - Delete a user by ID. _(Requires admin)_
+  - **📊 make User Admin**
+  - `PUT /v1/users/makeadmin/{id}` - admin a user by ID. _(Requires admin)_
 
 ### 🖼️ Gallery
 - **📜 List Galleries**
