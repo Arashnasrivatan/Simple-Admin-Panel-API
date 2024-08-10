@@ -134,6 +134,38 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "make admin",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/restapi/crud/v1/users/makeadmin/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restapi",
+								"crud",
+								"v1",
+								"users",
+								"makeadmin",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"event": [
@@ -618,7 +650,7 @@
 		"apikey": [
 			{
 				"key": "value",
-				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhcmFzaDQ1NiIsInBhc3N3b3JkIjoiYXJhc2g0NTYiLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImFyYXNobmFzcml2YXRhbkBnbWFpbC5jb20iLCJleHAiOjE3MjIzNDk0MTB9.T79vdkgzNzo8qxGS28vT7LSwVHLaf4r7Uhu13wlZpL4",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhcmFzaDQ1NiIsInBhc3N3b3JkIjoiYXJhc2g0NTYiLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImFyYXNobmFzcml2YXRhbkBnbWFpbC5jb20iLCJleHAiOjE3MjM4OTQyMDV9.DemW8XC2M05r8e4Ru6VazkeumtlcxLB4U9h2M8moVjA",
 				"type": "string"
 			},
 			{
