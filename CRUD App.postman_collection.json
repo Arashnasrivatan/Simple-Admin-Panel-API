@@ -650,7 +650,7 @@
 		"apikey": [
 			{
 				"key": "value",
-				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhcmFzaDQ1NiIsInBhc3N3b3JkIjoiYXJhc2g0NTYiLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImFyYXNobmFzcml2YXRhbkBnbWFpbC5jb20iLCJleHAiOjE3MjM4OTQyMDV9.DemW8XC2M05r8e4Ru6VazkeumtlcxLB4U9h2M8moVjA",
+				"value": "replace your token",
 				"type": "string"
 			},
 			{
