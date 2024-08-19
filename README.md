@@ -31,7 +31,7 @@ use the postman file in repository <img src="https://raw.githubusercontent.com/T
   - `PUT /v1/users/{id}` - Update an existing user by ID. _(Requires admin)_
 - **<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Collision.webp" alt="Collision" width="20" height="20" /> Delete User**
   - `DELETE /v1/users/{id}` - Delete a user by ID. _(Requires admin)_
-  - **<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Bar%20Chart.webp" alt="Bar Chart" width="20" height="20" /> make User Admin**
+- **<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Bar%20Chart.webp" alt="Bar Chart" width="20" height="20" /> make User Admin**
   - `PUT /v1/users/makeadmin/{id}` - admin a user by ID. _(Requires admin)_
 
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/Family%20Man%20Woman%20Girl%20Boy.webp" alt="Family Man Woman Girl Boy" width="22" height="22" /> Gallery
