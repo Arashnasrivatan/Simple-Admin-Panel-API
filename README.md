@@ -34,7 +34,7 @@ use the postman file in repository <img src="https://raw.githubusercontent.com/T
   - **<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Bar%20Chart.webp" alt="Bar Chart" width="20" height="20" /> make User Admin**
   - `PUT /v1/users/makeadmin/{id}` - admin a user by ID. _(Requires admin)_
 
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/Family%20Man%20Woman%20Girl%20Boy.webp" alt="Family Man Woman Girl Boy" width="25" height="25" /> Gallery
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/Family%20Man%20Woman%20Girl%20Boy.webp" alt="Family Man Woman Girl Boy" width="22" height="22" /> Gallery
 - **<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/File%20Folder.webp" alt="File Folder" width="20" height="20" /> List Galleries**
   - `GET /v1/gallery` - Retrieve all gallery items. _(Requires admin)_
 - **<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Magnifying%20Glass%20Tilted%20Left.webp" alt="Magnifying Glass Tilted Left" width="20" height="20" /> View Gallery Item**
@@ -76,4 +76,4 @@ use the postman file in repository <img src="https://raw.githubusercontent.com/T
 - [Arash_aio](https://t.me/arash_aio)
 
 
-**Made with <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Heart%20On%20Fire.webp" alt="Heart On Fire" width="20" height="20" /> by Arash Nasrivatan**
+**Made with <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Heart%20On%20Fire.webp" alt="Heart On Fire" width="25" height="25" /> by Arash Nasrivatan**
