@@ -17,7 +17,7 @@ use the postman file in repository <img src="https://raw.githubusercontent.com/T
 ### Authentication
 - **<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Locked%20With%20Key.webp" alt="Locked With Key" width="20" height="20" /> Login**
   - `POST /v1/login` - Authenticate Admin (Users cant login).
-  - **<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Locked%20With%20Key.webp" alt="Locked With Key" width="20" height="20" /> register**
+- **<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Locked%20With%20Key.webp" alt="Locked With Key" width="20" height="20" /> register**
   - `POST /v1/register` - Register User.
 
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/Busts%20In%20Silhouette.webp" alt="Busts In Silhouette" width="20" height="20" /> Users
