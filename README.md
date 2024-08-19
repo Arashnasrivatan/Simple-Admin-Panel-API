@@ -73,7 +73,7 @@ use the postman file in repository <img src="https://raw.githubusercontent.com/T
 
 ## Developed by <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/Man%20Technologist.webp" alt="Man Technologist" width="25" height="25" />
 
-- [Arash_aio](https://t.me/arash_aio)
+- [Arash_aio](https://t.me/arash_aio) <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Check%20Mark%20Button.webp" alt="Check Mark Button" width="20" height="20" />
 
 
 **Made with <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Heart%20On%20Fire.webp" alt="Heart On Fire" width="25" height="25" /> by Arash Nasrivatan**
